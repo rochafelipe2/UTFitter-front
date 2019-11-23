@@ -16,7 +16,7 @@ class App extends React.Component{
 
   getUsuarios = async() =>{
     
-    const response = await fetch('/usuarios');
+    const response = await fetch('https://utfitter.herokuapp.com/usuarios');
 
   
     return response.json();
