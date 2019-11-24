@@ -4,6 +4,7 @@ import './App.css';
 import './style/assets/css/main.css';
 import './alertify/css/themes/default.css';
 import './alertify/css/alertify.css';
+import axios from 'axios';
 class App extends React.Component{
   constructor(props)
   {
@@ -14,26 +15,23 @@ class App extends React.Component{
     }
   }
 
-  getUsuarios = async() =>{
-    
-    const response = await fetch('https://utfitter.herokuapp.com/usuarios');
 
-  
-    return response.json();
-  }
 
   componentDidMount(){
-    this.getUsuarios().then(_usuarios => {
-      const {usuarios} = _usuarios
+    
+    axios.get('https://utfitter.herokuapp.com/usuarios').then(response =>{
+      const {usuarios} =  response.data;
       this.setState({
         usuarios: usuarios
       });
+    });
+     
       console.log(this.state.usuarios);
-    })
+    
   }
 
   render(){
-    const {usuarios} = this.state;
+    
   
     return (
 			<div id="wrapper">
@@ -51,15 +49,15 @@ class App extends React.Component{
                             </tr>
                         </thead>
                         <tbody>
-                        {
-      usuarios.map((usuario) =>{
+                        {/* {
+      this.state.usuarios.map((usuario) =>{
         return(
         <tr>
           <td>{usuario.nome}</td>
         </tr>
         )
       })
-    }
+    } */}
                         </tbody>
 						    </table>	
                 </div>
