@@ -49,7 +49,7 @@ class App extends React.Component{
                             </tr>
                         </thead>
                         <tbody>
-                        {/* {
+                        {
       this.state.usuarios.map((usuario) =>{
         return(
         <tr>
@@ -57,7 +57,7 @@ class App extends React.Component{
         </tr>
         )
       })
-    } */}
+    } 
                         </tbody>
 						    </table>	
                 </div>
