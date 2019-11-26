@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Login from './pages/Login';
 import Explorar from './pages/Explorar';
+import Cadastro from './pages/Cadastro';
+import Home from './pages/Home';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -13,6 +15,8 @@ ReactDOM.render(
             <Route path="/" exact={true} component={Login} />
             <Route path="/usuarios" component={App} />
             <Route path="/explorar" component={Explorar} />
+            <Route path="/cadastro" component={Cadastro} />
+            <Route path="/home" component={Home} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));
