@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Login from './pages/Login';
+import Explorar from './pages/Explorar';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -11,6 +12,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact={true} component={Login} />
             <Route path="/usuarios" component={App} />
+            <Route path="/explorar" component={Explorar} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));
