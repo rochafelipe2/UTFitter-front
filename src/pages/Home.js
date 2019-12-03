@@ -39,7 +39,7 @@ class App extends React.Component{
   }
 
   post(){
-    axios.post('https://utfitter.herokuapp.com/home', {texto:this.state.texto, autor: this.state.autor}).then(response =>{
+    axios.post('https://utfitter.herokuapp.com/publicar', {texto:this.state.texto, autor: this.state.autor}).then(response =>{
         const {usuario, publicacoes} =  response.data;
         
         this.setState({
