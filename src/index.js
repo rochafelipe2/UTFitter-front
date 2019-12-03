@@ -6,6 +6,8 @@ import Login from './pages/Login';
 import Explorar from './pages/Explorar';
 import Cadastro from './pages/Cadastro';
 import Home from './pages/Home';
+import Home from './pages/Seguidores';
+import Home from './pages/Seguindo';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -17,6 +19,8 @@ ReactDOM.render(
             <Route path="/explorar" component={Explorar} />
             <Route path="/cadastro" component={Cadastro} />
             <Route path="/home" component={Home} />
+            <Route path="/seguidores" component={Seguidores} />
+            <Route path="/seguindo" component={Seguindo} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));
