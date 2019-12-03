@@ -49,7 +49,7 @@ class App extends React.Component{
             <section id="main">
                 <div class="row"><h1>Seguidores:</h1></div>
                      
-                {this.state.people.map((s) =>{
+                {this.state.seguidores.map((s) =>{
                      return(
                 <div class="row">
                    <span  class="avatar" style="text-align:left; padding:2px;"><img src={s.avatar} alt="" /></span>
