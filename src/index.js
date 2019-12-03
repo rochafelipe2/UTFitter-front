@@ -6,8 +6,8 @@ import Login from './pages/Login';
 import Explorar from './pages/Explorar';
 import Cadastro from './pages/Cadastro';
 import Home from './pages/Home';
-import Home from './pages/Seguidores';
-import Home from './pages/Seguindo';
+import Seguidores from './pages/Seguidores';
+import Seguindo from './pages/Seguindo';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
