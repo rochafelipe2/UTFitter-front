@@ -7,7 +7,7 @@ import '../alertify/css/alertify.css';
 import axios from 'axios';
 import alertify from 'alertifyjs'
 
-class App extends React.Component{
+class Seguindo extends React.Component{
   constructor(props)
   {
     super(props);
@@ -70,4 +70,4 @@ class App extends React.Component{
 }
 }
 
-export default App;
+export default Seguindo;
